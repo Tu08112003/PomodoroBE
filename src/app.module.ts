@@ -4,6 +4,7 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { ThrottlerModule, ThrottlerGuard } from '@nestjs/throttler';
 import { APP_GUARD } from '@nestjs/core';
 import configuration from './config/configuration';
+import { UsersModule } from './users/users.module';
 
 @Module({
   imports: [
@@ -37,6 +38,9 @@ import configuration from './config/configuration';
       ],
       inject: [ConfigService],
     }),
+
+    // Feature modules
+    UsersModule,
   ],
   providers: [
     {
