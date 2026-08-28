@@ -6,6 +6,7 @@ import { APP_GUARD } from '@nestjs/core';
 import configuration from './config/configuration';
 import { AuthModule } from './auth/auth.module';
 import { UsersModule } from './users/users.module';
+import { YoutubeTracksModule } from './youtube-tracks/youtube-tracks.module';
 
 @Module({
   imports: [
@@ -43,6 +44,7 @@ import { UsersModule } from './users/users.module';
     // Feature modules
     AuthModule,
     UsersModule,
+    YoutubeTracksModule,
   ],
   providers: [
     {
