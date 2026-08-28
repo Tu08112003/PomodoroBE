@@ -7,6 +7,7 @@ import configuration from './config/configuration';
 import { AuthModule } from './auth/auth.module';
 import { UsersModule } from './users/users.module';
 import { YoutubeTracksModule } from './youtube-tracks/youtube-tracks.module';
+import { WallpapersModule } from './wallpapers/wallpapers.module';
 
 @Module({
   imports: [
@@ -45,6 +46,7 @@ import { YoutubeTracksModule } from './youtube-tracks/youtube-tracks.module';
     AuthModule,
     UsersModule,
     YoutubeTracksModule,
+    WallpapersModule,
   ],
   providers: [
     {
