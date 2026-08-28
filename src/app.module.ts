@@ -8,6 +8,7 @@ import { AuthModule } from './auth/auth.module';
 import { UsersModule } from './users/users.module';
 import { YoutubeTracksModule } from './youtube-tracks/youtube-tracks.module';
 import { WallpapersModule } from './wallpapers/wallpapers.module';
+import { TodosModule } from './todos/todos.module';
 
 @Module({
   imports: [
@@ -47,6 +48,7 @@ import { WallpapersModule } from './wallpapers/wallpapers.module';
     UsersModule,
     YoutubeTracksModule,
     WallpapersModule,
+    TodosModule,
   ],
   providers: [
     {
